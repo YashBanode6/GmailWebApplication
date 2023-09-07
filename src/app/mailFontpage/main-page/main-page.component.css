@@ -1,0 +1,272 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.header_left img{
+    object-fit: contain;
+    height: 50px;
+    margin-left: 5px;
+}
+
+.header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 10px;
+    border-bottom: 1px solid whitesmoke;
+}
+
+.header_left{
+    display: flex;
+    align-items: center;
+}
+
+.header_left span{
+    padding: 10px;
+    cursor: pointer;
+}
+
+.header_mid{
+    display: flex;
+    flex: 0.7;
+    align-items: center;
+    background-color: whitesmoke;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.material-symbols-outlined{
+    color: gray;
+}
+
+.header_mid #sc-inp{
+    border: none;
+    width: 100%;
+    padding: 10px;
+    outline: none;
+    font-size: medium;
+    background-color: transparent;
+}
+
+
+.header_right{
+    display: flex;
+    padding: 20px;
+}
+
+
+.header_right span{
+    padding: 10px;
+    cursor: pointer;
+}
+
+/* Sidebar CSS */
+
+.sidebar{
+    flex: 0.3;
+    max-width: 300px;
+    padding-right: 20px;
+}
+
+.sidebar_cumpose{
+    margin-top: 15px;
+    margin-left: 10px;
+    margin-bottom: 15px;
+    text-transform: capitalize;
+    color: white;
+    padding: 15px;
+    border-radius: 30px;
+    background-color: rgb(201, 201, 239);
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    outline: none;
+    border: none;
+    box-shadow: 0px 2px 5px -2px rgba(0,0, 0, 0.75);
+}
+
+.sidebar_cumpose span{
+    margin-right: 5px;
+}
+
+.sidebarOption{
+    display: flex;
+    align-items: center;
+    height: 40px;
+    padding: 0 10px;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    cursor: pointer;
+    color: black;
+}
+
+.sidebarOption .material-symbols-outlined{
+    padding: 5px;
+}
+
+/* sidebar tags */
+.sidebarOption h3{
+    flex: 1;
+    margin-left: 10px;
+    font-size: 14px;
+    
+}
+
+/* .sidebarOption:hover, 
+.sidebarOption:hover h3,
+.sidebarOption:hover .material-symbols-outlined,
+.sidebarOption_active,
+.sidebarOption_active h3,
+.sidebarOption_active .material-symbols-outlined
+{
+
+background-color: whitesmoke;
+
+font-weight: 800;
+
+} */
+
+.sidebar_footer{
+    display: flex;
+    justify-content: center;
+}
+
+
+.sidebar_footerIcons .material-symbols-outlined{
+    margin: 7px;
+    cursor: pointer;
+}
+
+.main_body{
+    display: flex;
+    height: 100vh;
+}
+
+body{
+    height: 100vh;
+    overflow-y: hidden;
+}
+/* Data List */
+.emaillist{
+    flex: 1;
+    overflow: scroll;
+}
+
+.em-li-setting{
+    position: sticky;
+    top: 0;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid whitesmoke;
+    background-color: white;
+    z-index: 999;
+    padding: 8px;
+
+}
+
+.em-li-lft{
+    display: flex;
+    align-items: center;
+}
+
+.em-li-setting .material-symbols-outlined{
+    margin: 5px;
+    cursor: pointer;
+}   
+
+.section{
+    display: flex;
+    align-items: center;
+    border-bottom-width: 2px;
+    padding: 15px;
+    min-width: 200px;
+    cursor: pointer;
+    color: grey;
+    border-width: 0;
+}
+
+.emaillist_section{
+    position: sticky;
+    top: 0;
+    display: flex;
+    background-color: white;
+    border-bottom: 1px solid whitesmoke;
+    z-index: 999;
+}
+
+.section_select{
+    background-color: white;
+    border-width: 3px;
+    color: red;
+    border-bottom: 3px solid red;
+}
+
+.section_select .material-symbols-outlined{
+    color: red;
+}
+
+.section:hover{
+    background-color: whitesmoke;
+    border-width: 3px;
+}
+
+.section h4{
+    font-size: 14px;
+    margin-left: 15px;
+}
+
+.emailRow_options{
+    display: flex;
+    align-items: center;
+}
+
+.emailRow_options .material-symbols-outlined, input{
+    margin: 5px;
+}
+
+.emailRow{
+    display: flex;
+    align-items: center;
+    height: 50px;
+    border-bottom: 1px solid whitesmoke ;
+    cursor: pointer;
+    z-index: 999;
+}
+
+.emailRow:hover{
+    border-top: 1px solid wheat;
+    box-shadow: 0 4px 5px -2px rgba(0, 0, 0, 0.24)
+}
+
+.emailrow-msg{
+    display: flex;
+    flex: 0.8;
+    align-items: center;
+    font-size: 13.5px;
+}
+
+.emailrow-msg h4{
+    width: 400px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+.emailrow-tlt{
+    font-size: 13px;
+    flex: 0.3;
+}
+
+.email-rw-tim{
+    padding-right: 15px;
+    font-size: 10px;
+    font-weight: bold;
+}
+
+.email-rw-discp{
+    font-weight: 400;
+    color: gray;
+}

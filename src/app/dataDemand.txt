@@ -1,0 +1,11 @@
+MainPage Table Data::
+    // Permanent Const//
+    1. CheckBox
+    2. starred
+    3. labelImp
+
+(Data) Json::
+A. Main Name Tag4
+B. Subject
+C. Short Message
+D. Time
