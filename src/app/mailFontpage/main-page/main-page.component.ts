@@ -13,7 +13,7 @@ export class MainPageComponent {
 
   emailData: any[] = [];
 
-  constructor(private service: MailgenerationService, private routre: Router){}
+  constructor(private service: MailgenerationService, private composeservice:MailgenerationService ,private routre: Router){}
 
 
   composeemail = new FormGroup({
@@ -33,6 +33,11 @@ export class MainPageComponent {
     this.getMailsData();
   }
 
+  composeMail(){
+    this.composeservice.postMail(this.composeemail.value).subscribe((resp) => {
+      console.warn(resp);
+    })
+  }
 
   getMailsData(){
     this.service.getMail().subscribe((resp) => {
