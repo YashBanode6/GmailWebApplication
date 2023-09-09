@@ -248,7 +248,7 @@ body{
 }
 
 .emailrow-msg h4{
-    width: 550px;
+    width: 600px;
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
