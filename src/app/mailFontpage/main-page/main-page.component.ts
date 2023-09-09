@@ -1,4 +1,6 @@
+import { Time, formatDate } from '@angular/common';
 import { Component } from '@angular/core';
+import { Router } from '@angular/router';
 import { MailgenerationService } from 'src/app/services/mailgeneration.service';
 
 @Component({
@@ -10,7 +12,7 @@ export class MainPageComponent {
 
   emailData: any[] = [];
 
-  constructor(private service: MailgenerationService){}
+  constructor(private service: MailgenerationService, private routre: Router){}
 
   ngOnInit(){
     // this.service.getMail().subscribe((resp) => {
@@ -25,6 +27,10 @@ export class MainPageComponent {
     this.service.getMail().subscribe((resp) => {
       this.emailData = resp;
     });
+  }
+
+  composeButton(){
+    this.routre.navigate(['/compose']);
   }
 
 }

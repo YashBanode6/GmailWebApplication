@@ -239,6 +239,7 @@ body{
     box-shadow: 0 4px 5px -2px rgba(0, 0, 0, 0.24)
 }
 
+
 .emailrow-msg{
     display: flex;
     flex: 0.8;
@@ -247,7 +248,7 @@ body{
 }
 
 .emailrow-msg h4{
-    width: 400px;
+    width: 550px;
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
@@ -270,3 +271,41 @@ body{
     font-weight: 400;
     color: gray;
 }
+
+.container {
+    display: flex;
+    justify-content: center;
+    padding-top: 20%;
+    margin-right: 5%;
+    right: 0;
+    bottom: 10;
+    position: fixed;
+  }
+  
+  .inline-frm-cont {
+    width: 500px;
+    /* padding: 5px; */
+    border: 2px solid black;
+  }
+  .newmessage {
+    border: 1px solid grey;
+  }
+  .form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  
+  .form-control {
+    display: block;
+    padding: 0.265rem 0.55rem;
+    width: 95%;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+  }
+  #textare {
+    width: 100%;
+    color: gray;
+  }
+  

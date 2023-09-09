@@ -1,10 +1,45 @@
 {
   "mail": [
     {
-      "id": "",
-      "subject": "",
-      "message": "",
-      "datetime" : ""
+      "id": "rish@12.com",
+      "title": "Mona",
+      "subject": "Testing the post method",
+      "message": "Hello, \n Welcome to another trial of gmail demo.",
+      "datetime": "2023-09-08T13:16:45.350Z"
+    },
+    {
+      "id": "mirza@123.com",
+      "title": "Knolad",
+      "subject": "Getting success in all possible module",
+      "message": "Greetings,\n   There we go for a long and a very happy and excitement road trip as we are getting close to the target.",
+      "datetime": null
+    },
+    {
+      "id": "moas@aicknan.com",
+      "title": "AOS",
+      "subject": "AKS",
+      "message": "AMSkk n ADnak ianS aks kc sanosoasv aodvaso aovaosvmaosvoasmvmsanvoasvnsan na aoovnasv",
+      "datetime": null
+    },
+    {
+      "id": "Oapa@123.com",
+      "title": "AK",
+      "subject": "APL OAKOSo",
+      "message": "Ap ko 4as54 5sv487as85 8rwmfkv -3(FVOA a."
+    },
+    {
+      "id": "aswj@VKS.xcom",
+      "title": "AL",
+      "subject": "AL aO",
+      "message": "amscs",
+      "datetime": null
+    },
+    {
+      "id": "ssas",
+      "title": "sca",
+      "subject": "sca",
+      "message": "sacaPAs",
+      "datetime": "2023-09-08T14:00:28.983Z"
     }
   ],
   "comments": [

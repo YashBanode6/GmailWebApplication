@@ -28,7 +28,7 @@
   <div class="main_body">
     <!-- side-bar Start -->
     <div class="sidebar">
-      <button class="sidebar_cumpose">
+      <button class="sidebar_cumpose" (click)="composeButton()">
         <span class="material-symbols-outlined"> add </span>
         Compose
       </button>
@@ -98,34 +98,58 @@
       <!-- Setting Ends -->
 
       <!-- table Start Section -->
+      <table>
+        <thead>
+          <div class="emaillist_section">
+            <tr>
+              <th>
+                <div class="section section_select">
+                  <span class="material-symbols-outlined"> inbox </span>
+                  <h4>Primary</h4>
+                </div>
+              </th>
 
-      <div class="emaillist_section">
-        <div class="section section_select">
-          <span class="material-symbols-outlined"> inbox </span>
-          <h4>Primary</h4>
-        </div>
-
-        <div class="section">
-          <span class="material-symbols-outlined"> people </span>
-          <h4>Socila</h4>
-        </div>
-
-        <div class="section">
-          <span class="material-symbols-outlined"> local_offer </span>
-          <h4>Promotions</h4>
-        </div>
-      </div>
-
-      <!-- table head Section -->
-
-      <div class="email-li-li">
-        <div class="emailRow">
-          <div class="emailRow_options">
-            <input type="checkbox" />
-            <span class="material-symbols-outlined"> star_border </span>
-            <span class="material-symbols-outlined"> label_important </span>
+              <th>
+                <div class="section">
+                  <span class="material-symbols-outlined"> people </span>
+                  <h4>Socila</h4>
+                </div>
+              </th>
+              <th>
+                <div class="section">
+                  <span class="material-symbols-outlined"> local_offer </span>
+                  <h4>Promotions</h4>
+                </div>
+              </th>
+            </tr>
           </div>
-          <h3 class="emailrow-tlt">Udemy</h3>
+        </thead>
+
+        <!-- table head Section -->
+
+        <tbody>
+          <tr *ngFor="let d of emailData">
+            <div class="email-li-li">
+              <div class="emailRow">
+                <div class="emailRow_options">
+                  <input type="checkbox" />
+                  <span class="material-symbols-outlined"> star_border </span>
+                  <span class="material-symbols-outlined">
+                    label_important
+                  </span>
+                </div>
+                <h3 class="emailrow-tlt">
+                  {{ d.title }}
+                </h3>
+                <div class="emailrow-msg">
+                  <h4>
+                    {{ d.subject }}
+                    <span class="email-rw-discp">
+                      {{ d.message }}
+                    </span>
+                  </h4>
+                </div>
+                <!-- <h3 class="emailrow-tlt">Udemy</h3>
           <div class="emailrow-msg">
             <h4>
               You got a new subscriber
@@ -133,11 +157,14 @@
                 K k has replied to your query regarding the asked question
               </span>
             </h4>
-          </div>
+          </div> -->
 
-          <p class="email-rw-tim">10:30 AM</p>
-        </div>
-      </div>
+                <p class="email-rw-tim">{{ d.datetime }}</p>
+              </div>
+            </div>
+          </tr>
+        </tbody>
+      </table>
     </div>
     <!-- Email List End -->
   </div>
