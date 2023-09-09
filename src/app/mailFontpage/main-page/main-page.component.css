@@ -280,6 +280,7 @@ body{
     right: 0;
     bottom: 10;
     position: fixed;
+    display: none;
   }
   
   .inline-frm-cont {
