@@ -4,9 +4,9 @@
   padding-top: 20%;
   margin-right: 5%;
   right: 0;
-  bottom: 10;
+  top: 0;
   position: fixed;
-  display: none;
+ 
 }
 
 .inline-frm-cont {

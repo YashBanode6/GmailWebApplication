@@ -1,7 +1,8 @@
 <div class="container">
-  <div class="inline-frm-cont">
+  <div class="inline-frm-cont" [hidden]="hideComposeBox">
     <div class="newmessage">
       <h3>New Message</h3>
+      <div><button (click)="hideCompBox()">X</button></div>
     </div>
     <form [formGroup]="composeemail" (ngSubmit)="composeMail()">
       <div class="form-group">

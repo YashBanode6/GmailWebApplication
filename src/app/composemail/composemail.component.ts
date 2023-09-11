@@ -33,4 +33,11 @@ export class ComposemailComponent {
       return date.toTimeString().split('')[0];
   }
 
+  hideComposeBox: boolean = false;
+
+  hideCompBox(){
+    this.hideComposeBox = true;
+  }
+
+
   }

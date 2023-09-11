@@ -13,6 +13,19 @@ export class MainPageComponent {
 
   emailData: any[] = [];
 
+  composeMessage: boolean = false;
+
+   
+
+    // for opening the compose box through compose button
+    //  opencumposebox: boolean = false;
+
+    // for opening the compose box through compose button using (click) eventlistner
+    // showcomposebox:boolean = true;
+
+    message:string = '';
+
+
   constructor(private service: MailgenerationService, private composeservice:MailgenerationService ,private routre: Router){}
 
 
@@ -26,10 +39,7 @@ export class MainPageComponent {
 
 
   ngOnInit(){
-    // this.service.getMail().subscribe((resp) => {
-    //   this.emailData = resp;
-    // });
-
+  
     this.getMailsData();
   }
 
@@ -45,8 +55,26 @@ export class MainPageComponent {
     });
   }
 
-  // composeButton(){
-  //   this.routre.navigate(['/compose']);
+  composeButton(){
+    this.composeMessage = true;
+  }
+
+// for opening the compose box through compose button
+  // displayComposeBox(){
+  //   this.opencumposebox = true;
+  // }
+
+   // for closing the compose box through given button inside the box
+   displayCompBox: boolean = false;
+   
+  // for closing the compose box through given button inside the box
+  closeComposeBox(){
+    this.displayCompBox = true;
+  }
+
+
+  // togglecomposebox(){
+  //   this.showcomposebox = !this.showcomposebox;
   // }
 
 }

@@ -272,6 +272,9 @@ body{
     color: gray;
 }
 
+
+/* Compose Message Button Start */
+/* 
 .container {
     display: flex;
     justify-content: center;
@@ -280,12 +283,12 @@ body{
     right: 0;
     bottom: 10;
     position: fixed;
-    display: none;
+   
+   
   }
   
   .inline-frm-cont {
     width: 500px;
-    /* padding: 5px; */
     border: 2px solid black;
   }
   .newmessage {
@@ -309,4 +312,20 @@ body{
     width: 100%;
     color: gray;
   }
+
+  .comp-rem-btn{
+    float: right;
+    margin-top: -20px;
+    
+  } */
+  /* .inline-frm-cont {
+    width: 500px;
+    padding: 5px;
+    border: 2px solid black;
+  } */
+  /* for displaying the compose box using ngClass directive, using dynamic CSS */
+  /* .displaycompbox{
+    visibility: visible;
+  } */
   
+  /* Compose Message Button End */

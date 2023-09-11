@@ -166,10 +166,15 @@
     </div>
     <!-- Email List End -->
 
+    <!-- Compose Email Box Start -->
+    <!-- 
     <div class="container" id="compose">
-      <div class="inline-frm-cont">
+      <div class="inline-frm-cont" [hidden]="displayCompBox">
         <div class="newmessage">
           <h3>New Message</h3>
+          <span class="comp-rem-btn"
+            ><button (click)="closeComposeBox()">X</button></span
+          >
         </div>
         <form [formGroup]="composeemail">
           <div class="form-group">
@@ -213,6 +218,10 @@
           <button id="send-btn">Send</button>
         </form>
       </div>
-    </div>
+    </div> -->
+    <!-- Compose Email Box End -->
+  </div>
+  <div>
+    <app-composemail></app-composemail>
   </div>
 </body>
