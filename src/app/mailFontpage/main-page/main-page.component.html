@@ -9,11 +9,9 @@
         alt=""
       />
     </div>
-    <div class="header_mid">
-      <span class="material-symbols-outlined"> search </span>
-      <input type="text" placeholder="Search Mail" id="sc-inp" />
-      <span class="material-symbols-outlined"> expand_more </span>
-    </div>
+    <app-headersearch
+      (searchTextChanged)="onSearchTextEntered($event)"
+    ></app-headersearch>
     <div class="header_right">
       <span class="material-symbols-outlined"> apps </span>
       <span class="material-symbols-outlined"> notifications </span>
@@ -127,27 +125,33 @@
 
         <!-- table head Section -->
 
-        <!-- <tbody>
+        <ng-container *ngFor="let d of emailData">
+          <!-- <tbody>
           <tr *ngFor="let d of emailData"> -->
-        <div class="email-li-li" *ngFor="let d of emailData">
-          <div class="emailRow">
-            <div class="emailRow_options">
-              <input type="checkbox" />
-              <span class="material-symbols-outlined"> star_border </span>
-              <span class="material-symbols-outlined"> label_important </span>
-            </div>
-            <h3 class="emailrow-tlt">
-              {{ d.title }}
-            </h3>
-            <div class="emailrow-msg">
-              <h4>
-                {{ d.subject }}
-                <span class="email-rw-discp">
-                  {{ d.message }}
-                </span>
-              </h4>
-            </div>
-            <!-- <h3 class="emailrow-tlt">Udemy</h3>
+          <div
+            class="email-li-li"
+            *ngIf="
+              searchvalue === '' || d.title.toLowerCase().includes(searchvalue)
+            "
+          >
+            <div class="emailRow">
+              <div class="emailRow_options">
+                <input type="checkbox" />
+                <span class="material-symbols-outlined"> star_border </span>
+                <span class="material-symbols-outlined"> label_important </span>
+              </div>
+              <h3 class="emailrow-tlt">
+                {{ d.title }}
+              </h3>
+              <div class="emailrow-msg">
+                <h4>
+                  {{ d.subject }}
+                  <span class="email-rw-discp">
+                    {{ d.message }}
+                  </span>
+                </h4>
+              </div>
+              <!-- <h3 class="emailrow-tlt">Udemy</h3>
           <div class="emailrow-msg">
             <h4>
               You got a new subscriber
@@ -157,9 +161,10 @@
             </h4>
           </div> -->
 
-            <p class="email-rw-tim">{{ d.datetime }}</p>
+              <p class="email-rw-tim">{{ d.datetime }}</p>
+            </div>
           </div>
-        </div>
+        </ng-container>
         <!-- </tr>
         </tbody> -->
       </table>

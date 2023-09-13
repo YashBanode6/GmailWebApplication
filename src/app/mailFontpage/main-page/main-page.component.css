@@ -27,27 +27,27 @@
     cursor: pointer;
 }
 
-.header_mid{
+/* .header_mid{
     display: flex;
     flex: 0.7;
     align-items: center;
     background-color: whitesmoke;
     padding: 10px;
     border-radius: 5px;
-}
+} */
 
 .material-symbols-outlined{
     color: gray;
 }
 
-.header_mid #sc-inp{
+/* .header_mid #sc-inp{
     border: none;
     width: 100%;
     padding: 10px;
     outline: none;
     font-size: medium;
     background-color: transparent;
-}
+} */
 
 
 .header_right{

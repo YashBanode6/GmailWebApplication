@@ -1,5 +1,5 @@
 import { Time, formatDate } from '@angular/common';
-import { Component } from '@angular/core';
+import { Component, EventEmitter, Output } from '@angular/core';
 import { FormControl, FormGroup, Validators } from '@angular/forms';
 import { Router } from '@angular/router';
 import { MailgenerationService } from 'src/app/services/mailgeneration.service';
@@ -72,10 +72,24 @@ export class MainPageComponent {
     this.displayCompBox = true;
   }
 
+  enteredSearchValue: string[] = [];
 
-  // togglecomposebox(){
-  //   this.showcomposebox = !this.showcomposebox;
+  filterResult(searchdata: string )  {
+    
+    const filteredData = this.enteredSearchValue.filter(item => item.toLowerCase().includes(searchdata.trim().toLowerCase()));  
+    console.log(filteredData);
+  }
+
+ 
+  // onSearchTextChange(){
+  //   this.searchTextChange.emit(this.enteredSearchValue);
   // }
+
+  searchvalue: string = '';
+  onSearchTextEntered(value: string){
+      this.searchvalue = value;
+      // console.log(this.searchvalue);
+    }
 
 }
 

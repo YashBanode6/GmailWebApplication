@@ -1,0 +1,35 @@
+/* *{
+    margin: 0;
+    padding: 0;
+}
+ */
+
+/* .header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 10px;
+    border-bottom: 1px solid whitesmoke;
+} */
+
+.header_mid{
+    display: flex;
+    flex: 0.7;
+    align-items: center;
+    background-color: whitesmoke;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.material-symbols-outlined{
+    color: gray;
+}
+
+.header_mid #sc-inp{
+    border: none;
+    width: 100vh;
+    padding: 10px;
+    outline: none;
+    font-size: medium;
+    background-color: transparent;
+}

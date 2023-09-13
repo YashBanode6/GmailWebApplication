@@ -7,12 +7,14 @@ import { AppComponent } from './app.component';
 import { MainPageComponent } from './mailFontpage/main-page/main-page.component';
 import { ComposemailComponent } from './composemail/composemail.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { HeadersearchComponent } from './headersearch/headersearch.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     MainPageComponent,
-    ComposemailComponent
+    ComposemailComponent,
+    HeadersearchComponent
   ],
   imports: [
     BrowserModule,
