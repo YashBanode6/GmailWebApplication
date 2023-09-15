@@ -140,6 +140,7 @@
                 <span class="material-symbols-outlined"> star_border </span>
                 <span class="material-symbols-outlined"> label_important </span>
               </div>
+
               <h3 class="emailrow-tlt">
                 {{ d.title }}
               </h3>
@@ -151,17 +152,17 @@
                   </span>
                 </h4>
               </div>
-              <!-- <h3 class="emailrow-tlt">Udemy</h3>
-          <div class="emailrow-msg">
-            <h4>
-              You got a new subscriber
-              <span class="email-rw-discp">
-                K k has replied to your query regarding the asked question
-              </span>
-            </h4>
-          </div> -->
 
               <p class="email-rw-tim">{{ d.datetime }}</p>
+
+              <div class="sidebarOption sidebarOption_active">
+                <span
+                  class="material-symbols-outlined"
+                  (click)="deleteMail(d.id)"
+                >
+                  delete
+                </span>
+              </div>
             </div>
           </div>
         </ng-container>

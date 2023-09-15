@@ -20,5 +20,8 @@ export class MailgenerationService {
     return this.http.post<any>(this.url, mailData);
   }
 
+  deleteMail(id: any){
+    return this.http.delete<any>(this.url + "/" + id)
+  }
   
 }

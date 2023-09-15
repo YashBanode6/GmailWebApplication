@@ -109,7 +109,8 @@
     flex: 1;
     margin-left: 10px;
     font-size: 14px;
-    
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: gray;
 }
 
 /* .sidebarOption:hover, 
@@ -247,7 +248,7 @@ body{
 }
 
 .emailrow-msg h4{
-    width: 600px;
+    width: 700px;
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;

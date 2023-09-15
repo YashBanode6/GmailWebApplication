@@ -22,14 +22,7 @@ export class MainPageComponent {
     return this.displayCreateMailBox = false;
   }
    
-
-    // for opening the compose box through compose button
-    //  opencumposebox: boolean = false;
-
-    // for opening the compose box through compose button using (click) eventlistner
-    // showcomposebox:boolean = true;
-
-    message:string = '';
+  message:string = '';
 
 
   constructor(private service: MailgenerationService, private composeservice:MailgenerationService ,private routre: Router){}
@@ -84,6 +77,15 @@ export class MainPageComponent {
   onSearchTextEntered(value: string){
       this.searchvalue = value;
       // console.log(this.searchvalue);
+    }
+
+
+    deleteMail(id: any){
+      this.service.deleteMail(id).subscribe((resp) => {
+        console.warn('deleted' + resp);
+      alert('deleted successfully' + id);
+      window.location.reload();
+      });
     }
 
 }
