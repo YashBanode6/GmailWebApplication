@@ -15,6 +15,12 @@ export class MainPageComponent {
 
   composeMessage: boolean = false;
 
+  // for Compose button
+  displayCreateMailBox: boolean = true;
+
+  displayBoxOnBtnClick(){
+    return this.displayCreateMailBox = false;
+  }
    
 
     // for opening the compose box through compose button
@@ -59,18 +65,7 @@ export class MainPageComponent {
     this.composeMessage = true;
   }
 
-// for opening the compose box through compose button
-  // displayComposeBox(){
-  //   this.opencumposebox = true;
-  // }
 
-   // for closing the compose box through given button inside the box
-   displayCompBox: boolean = false;
-   
-  // for closing the compose box through given button inside the box
-  closeComposeBox(){
-    this.displayCompBox = true;
-  }
 
   enteredSearchValue: string[] = [];
 

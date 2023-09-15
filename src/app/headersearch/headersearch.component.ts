@@ -17,4 +17,10 @@ export class HeadersearchComponent {
     this.searchTextChanged.emit(this.searchInputShow);
   }
 
+  searchvalue: string = '';
+  onSearchTextEntered(value: string){
+      this.searchvalue = value;
+      // console.log(this.searchvalue);
+    }
+
 }

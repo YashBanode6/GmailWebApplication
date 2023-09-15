@@ -37,6 +37,7 @@ export class ComposemailComponent {
 
   hideCompBox(){
     this.hideComposeBox = true;
+    window.location.reload();
   }
 
 

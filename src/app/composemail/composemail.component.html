@@ -2,7 +2,7 @@
   <div class="inline-frm-cont" [hidden]="hideComposeBox">
     <div class="newmessage">
       <h3>New Message</h3>
-      <div><button (click)="hideCompBox()">X</button></div>
+      <div><button id="drop-cmp-bx" (click)="hideCompBox()">X</button></div>
     </div>
     <form [formGroup]="composeemail" (ngSubmit)="composeMail()">
       <div class="form-group">
@@ -12,6 +12,7 @@
           name="To"
           placeholder="To"
           formControlName="id"
+          required
         />
       </div>
       <div class="form-group">
@@ -21,6 +22,7 @@
           name="from"
           placeholder="from"
           formControlName="title"
+          required
         />
       </div>
       <div class="form-group">
@@ -30,20 +32,23 @@
           name="Subject"
           placeholder="Subject"
           formControlName="subject"
+          required
         />
       </div>
       <div class="form-group">
         <textarea
           id="txtare"
           cols="30"
-          rows="10"
+          rows="17"
           name="message"
           placeholder="write message"
           formControlName="message"
+          required
         ></textarea>
       </div>
-
-      <button id="send-btn">Send</button>
+      <div class="btn-snd">
+        <button id="send-btn">Send</button>
+      </div>
     </form>
   </div>
 </div>
